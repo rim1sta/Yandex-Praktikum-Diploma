@@ -13,7 +13,7 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: {
-        main: './src/scripts/index.js' 
+        index: './src/scripts/index.js' 
     },  
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -33,9 +33,10 @@ module.exports = {
                         {
                             loader:'css-loader',
                             options: {
-                                importLoaders: 1
-                            } 
-                        } 
+                                importLoaders: 2
+                            } ,
+                        } ,
+                        "postcss-loader",
                     ], 
             },
             {
@@ -48,11 +49,10 @@ module.exports = {
                   'file-loader',
                   {
                     loader: 'image-webpack-loader',
-                    options: {
-                      bypassOnDebug: true,  
-                      disable: true,  
+                    options: {  
                     },
                   },
+                 
                 ],
             }
         ]
@@ -71,7 +71,6 @@ module.exports = {
             canPrint: true
         }),
         new HtmlWebpackPlugin({ 
-            inject: false,
             template: './src/index.html',
             filename: 'index.html'
         }),
