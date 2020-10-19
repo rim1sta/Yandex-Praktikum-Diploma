@@ -1,0 +1,7 @@
+.news__card{
+    max-width: 400px;
+    height: 576px;
+    border-radius: 16px;    
+    background: #FFFFFF;
+    overflow: hidden;
+}

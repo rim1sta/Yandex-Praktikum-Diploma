@@ -13,7 +13,9 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: {
-        index: './src/scripts/index.js' 
+        index: './src/scripts/index.js' ,
+        about: './src/scripts/about.js',
+        paper: './src/scripts/paper.js',
     },  
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -74,6 +76,14 @@ module.exports = {
             template: './src/index.html',
             filename: 'index.html'
         }),
+        new HtmlWebpackPlugin({
+            template: "./src/about.html",
+            filename: "about.html",
+          }),
+          new HtmlWebpackPlugin({
+            template: "./src/paper.html",
+            filename: "paper.html",
+          }),
         new WebpackMd5Hash(),
         new webpack.DefinePlugin({
             'NODE_ENV': JSON.stringify(process.env.NODE_ENV)

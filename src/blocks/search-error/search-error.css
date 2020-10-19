@@ -1,0 +1,12 @@
+@import url(./__img/search-error__img.css);
+@import url(./__paragraph/search-error__paragraph.css);
+@import url(./__title/search-error__title.css);
+
+.search-error{
+    display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 374px;
+  background: #F5F6F7;
+}
