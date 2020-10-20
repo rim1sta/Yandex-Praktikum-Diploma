@@ -1,0 +1,6 @@
+.slider__card-user{
+    display: flex;
+    flex-direction: row;
+    width: 352px;
+    margin-top: 16px;
+}

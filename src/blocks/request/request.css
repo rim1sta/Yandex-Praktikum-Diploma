@@ -1,0 +1,15 @@
+@import url(./__li/request__li.css);
+@import url(./__link/request__link.css);
+@import url(./__link_activ/request__link_active.css);
+@import url(./__nav/request__nav.css);
+@import url(./__news/request__news.css);
+@import url(./__span/request__span.css);
+@import url(./__title/request__title.css);
+@import url(./__ul/request__ul.css);
+
+.request{
+    padding: 0 104px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 76px;
+}

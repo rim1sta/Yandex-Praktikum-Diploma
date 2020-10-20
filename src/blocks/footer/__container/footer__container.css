@@ -1,8 +1,12 @@
 .footer__container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0 104px;
-    height: 80px;
+    font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 104px;
+  min-height: 80px;
 }

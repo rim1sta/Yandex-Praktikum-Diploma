@@ -1,0 +1,18 @@
+@import url(./__blue-line/diagram__blue-line.css);
+@import url(./__blue-lines/diagram__blue-lines.css);
+@import url(./__container/diagram__container.css);
+@import url(./__data/diagram__data.css);
+@import url(./__line-number/diagramm__line-number.css);
+@import url(./__line/diagramm__line.css);
+@import url(./__lines-number/diagram__lines-number.css);
+@import url(./__lines/diagram__lines.css);
+@import url(./__statistics/diagram__statistics.css);
+@import url(./__title-container/diagramm__title-container.css);
+@import url(./__title/diagram__title.css);
+@import url(./__week-day/diagram__week-day.css);
+@import url(./__week/diagramm__week.css);
+
+.diagram{
+    margin: 0 auto;
+    padding: 0 104px;
+}

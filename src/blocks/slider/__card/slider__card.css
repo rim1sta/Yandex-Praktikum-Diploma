@@ -1,0 +1,12 @@
+.slider__card{
+    width: 400px;
+    height: 288px;
+    background-color: #fff;
+    border-radius: 16px;
+    padding-left:24px ;
+    margin-top: 64px;
+    margin-right: 16px;
+}
+.slider__card:last-child{
+    margin-right: 0;
+}

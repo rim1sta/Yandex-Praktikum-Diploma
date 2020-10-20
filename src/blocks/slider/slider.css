@@ -1,0 +1,22 @@
+@import url(./__arrow-left/slider__arrow-left.css);
+@import url(./__arrow-right/slider__arrow-right.css);
+@import url(./__card/slider__card.css);
+@import url(./__card-user/slider__card-user.css);
+@import url(./__commit/slider__commit.css);
+@import url(./__container/slider__container.css);
+@import url(./__date/slider__date.css);
+@import url(./__link/slider__link.css);
+@import url(./__title-container/slider__title-container.css);
+@import url(./__title/slider__title.css);
+@import url(./__user-avatar/slider__user-avatar.css);
+@import url(./__user-info/slider__user-info.css);
+@import url(./__user-mail/slider__user-mail.css);
+@import url(./__user-name/slider__user-name.css);
+@import url(./__control/slider__control.css);
+
+.slider{
+    margin: 0 auto;
+    padding: 0 104px;
+    background-color: #F5F6F7;
+    position: relative;
+}

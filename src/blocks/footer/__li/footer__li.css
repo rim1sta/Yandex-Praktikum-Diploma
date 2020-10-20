@@ -1,3 +1,6 @@
 .footer__li{
     list-style-type: none;
 }
+.footer__li:last-child{
+    margin-right: 0;
+}
