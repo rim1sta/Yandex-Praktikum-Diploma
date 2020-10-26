@@ -12,3 +12,15 @@ line-height: 24px;
 
 color: #1A1B22;
 }
+
+@media all and (max-width: 768px) {
+    .clients__paragraph{
+        margin-bottom: 48px;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .clients__paragraph{
+        margin-bottom: 32px;
+    }
+}

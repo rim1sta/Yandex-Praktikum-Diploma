@@ -4,12 +4,18 @@ font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 22px;
-/* or 137% */
-
-
-/* main/black */
-
 color: #1A1B22;
-width: 352px;
-margin: 16px 24px 0 24px;
+margin-top: 16px;
+margin-bottom: 0;
 }
+@media all and (max-width: 1024px) {
+    .news__paragraph {
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      max-height: 88px;
+      margin-top: 10px;
+    }
+  }
+  

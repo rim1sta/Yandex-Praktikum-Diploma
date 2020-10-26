@@ -10,6 +10,18 @@ letter-spacing: 0.4px;
 text-transform: uppercase;
 
 color: #B6BCBF;
-width: 352px;
-margin: 18px 0 24px 24px;
+
+margin-top: 18px;
+margin-bottom: 24px;
 }
+@media all and (max-width: 1024px) {
+    .news__source {
+      margin-top: 12px;
+    }
+  }
+  @media all and (max-width: 767px) {
+    .news__source {
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+  }

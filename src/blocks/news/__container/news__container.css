@@ -1,0 +1,10 @@
+.news__container{
+    padding: 0 24px;
+}
+@media all and (max-width: 1024px) {
+    .news__container {
+        padding: 0 16px;
+    }
+  }
+  
+  

@@ -11,3 +11,18 @@ color: #FFFFFF;
 margin-bottom: 32px;
 margin-top: 80px;
 }
+@media all and (max-width: 768px) {
+    .searcher__title{
+        font-size: 36px;
+line-height: 40px;
+margin-top: 40px;
+width: auto;
+margin-bottom: 16px;
+    }
+}
+
+@media all and (max-width: 520px) {
+    .searcher__title{
+margin-top: 30px;
+    }
+}

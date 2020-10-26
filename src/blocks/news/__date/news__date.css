@@ -12,6 +12,17 @@ align-items: center;
 /* simulator/gray/text */
 
 color: #B6BCBF;
-margin: 20px 0 0 24px;
-width: 352px;
+margin-top: 20px;
+margin-bottom: 0;
 }
+@media all and (max-width: 1024px) {
+    .news__date {
+      margin-top: 12px;
+    }
+  }
+  @media all and (max-width: 767px) {
+    .news__date {
+      margin-top: 15px;
+    }
+  }
+  

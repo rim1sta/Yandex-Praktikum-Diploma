@@ -3,3 +3,15 @@
     border-bottom: 3px solid #fff;
     padding-bottom: 27px;
 }
+
+@media all and (max-width: 768px) {
+    .header__link_active.header__link_active {
+        padding-bottom: 16px;
+    }
+  }
+  
+  @media all and (max-width: 520px) {
+    .header__link_active.header__link_active {
+      padding-bottom: 13px;
+    }
+  }

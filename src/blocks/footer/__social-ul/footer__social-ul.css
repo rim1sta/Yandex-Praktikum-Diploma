@@ -3,4 +3,13 @@
     flex-direction: row;
     margin-left: 0; /* Отступ слева в браузере IE и Opera */
     padding-left: 0;
+
 }
+
+@media all and (max-width: 750px){
+    .footer__social-ul{
+        position: absolute;
+        top: 21px;
+        right: 18px;
+    }
+  }

@@ -2,6 +2,23 @@
 Width: 464px;
 Height: 464px;
 margin-top: 80px;
-margin-left: 104px;
 margin-right: 56px;
+}
+
+@media all and (max-width: 1076px){
+    .author__img{
+        width: 232px;
+        height: 232px;
+        margin-top: 61px;
+        margin-right: 32px;
+    }
+}
+
+@media all and (max-width: 600px){
+    .author__img{
+        width: 272px;
+        height: 272px;
+        margin-top: 32px;
+        margin-right: 24px;
+    }
 }

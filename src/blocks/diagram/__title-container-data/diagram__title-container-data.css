@@ -1,0 +1,15 @@
+@import url(./_month/diagram__title-container-data_month.css);
+
+
+.diagram__title-container-data{
+    font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #B6BCBF;
+  margin-top: 0;
+  margin-bottom: 10px;
+}

@@ -1,3 +1,17 @@
 .technologes__item{
     margin-right: 36px;
 }
+.technologes__item:last-child{
+    margin-right: 0;
+}
+@media all and (max-width: 1024px) {
+    .technologes__item{
+        margin-right: 40px;
+    }
+}
+@media all and (max-width: 500px) {
+    .technologes__item:nth-child(2){
+        margin-right: 0;
+    }
+}
+

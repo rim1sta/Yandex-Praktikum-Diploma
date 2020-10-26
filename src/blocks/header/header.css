@@ -18,3 +18,16 @@
     width: 100%;
     min-height: 80px;
 }
+
+@media all and (max-width: 768px) {
+    .header {
+      min-height: 64px;
+    }
+  }
+  
+  @media all and (max-width: 520px) {
+    .header {
+      min-height: 56px;
+    }
+  }
+  

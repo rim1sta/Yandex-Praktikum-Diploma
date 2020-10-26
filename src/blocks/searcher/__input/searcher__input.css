@@ -19,3 +19,18 @@
   color: #1a1b22;
   caret-color: #2f71e5;
 }
+
+.searcher__input:focus {
+  border: 2px solid #2f71e5;
+}
+@media all and (max-width: 768px) {
+  .searcher__input {
+    height: 56px;
+  }
+}
+
+@media all and (max-width: 520px) {
+  .searcher__input {
+    position: relative;
+  }
+}

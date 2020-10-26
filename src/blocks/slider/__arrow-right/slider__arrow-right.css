@@ -3,3 +3,8 @@
     right: 24px;
     top: 306px;
 }
+@media all and (max-width: 980px) {
+    .slider__arrow-right {
+      display: none;
+    }
+  }

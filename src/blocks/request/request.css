@@ -13,3 +13,15 @@
     position: relative;
     margin-bottom: 76px;
 }
+@media all and (max-width: 1026px) {
+    .request {
+      padding: 0 40px;
+      margin-bottom: 40px;
+    }
+  }
+  @media all and (max-width: 425px) {
+    .request {
+      padding: 0 16px;
+      margin-bottom: 24px;
+    }
+  }

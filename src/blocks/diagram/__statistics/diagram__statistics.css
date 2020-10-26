@@ -1,0 +1,11 @@
+.diagram__statistics{
+    display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 504px;
+}
+@media all and (max-width: 425px) {
+  .diagram__statistics  {
+    min-height: 308px;
+  }
+}

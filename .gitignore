@@ -1,16 +1,16 @@
-node_modules
+node_modules/
 ### macOS ###
 # General
 .DS_Store
 .AppleDouble
 .LSOverride
-
+dist/
 # Icon must end with two \r
 Icon
-
+.editorconfig 
 # Thumbnails
 ._*
-
+.idea
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100
 .fseventsd

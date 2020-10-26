@@ -19,7 +19,7 @@ module.exports = {
     },  
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].[chunkhash].js'
+        filename: './scripts/[name].[chunkhash].js',
     },
     module: {
         rules: [
@@ -29,40 +29,38 @@ module.exports = {
                 exclude: /node_modules/ 
             },
             {
-                test: /\.css$/i,
+                test: /\.css$/,
                 use: [
-                        (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
-                        {
-                            loader:'css-loader',
-                            options: {
-                                importLoaders: 2
-                            } ,
-                        } ,
-                        "postcss-loader",
-                    ], 
+                  isDev ? "style-loader" : {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                          publicPath: "../",
+                        },
+                      },
+                  {
+                    loader: "css-loader",
+                    options: {
+                      importLoaders: 2,
+                    },
+                  },
+                  "postcss-loader",
+                ],
+              },
+              {
+                test: /\.(gif|png|jpe?g|svg|webp)$/,
+                use: "file-loader?name=./images/[name].[ext]&esModule=false",
             },
             {
                 test: /\.(eot|ttf|woff|woff2)$/,
                 loader: 'file-loader?name=./vendor/[name].[ext]'
             },
-            {
-                test: /\.(gif|png|jpe?g|svg|webp)$/i,
-                use: [
-                  'file-loader',
-                  {
-                    loader: 'image-webpack-loader',
-                    options: {  
-                    },
-                  },
-                 
-                ],
-            }
+
         ]
     },
     plugins: [
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: '[name].[contenthash].css'
+            filename: './style/[name].[contenthash].css'
         }),
         new OptimizeCssAssetsPlugin({
             assetNameRegExp: /\.css$/g,

@@ -13,10 +13,25 @@
 @import url(./__user-mail/slider__user-mail.css);
 @import url(./__user-name/slider__user-name.css);
 @import url(./__control/slider__control.css);
+@import url(./__button/slider__button.css);
+@import url(./__link-button/slider__link-button.css);
 
 .slider{
     margin: 0 auto;
     padding: 0 104px;
     background-color: #F5F6F7;
     position: relative;
+}
+
+@media all and (max-width: 768px) {
+    .slider{
+        padding: 0 40px;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .slider{
+        padding:0 16px;
+        padding-bottom: 32px;
+    }
 }

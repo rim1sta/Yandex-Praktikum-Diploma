@@ -7,6 +7,13 @@ font-weight: 400;
 letter-spacing: 0px;
 text-align: center;
 color: #1A1B22;
-margin-right: 40px;
 }
 
+
+@media all and (max-width: 1076px){
+    .footer__link{
+        
+    }
+  }
+
+  

@@ -3,4 +3,15 @@
     flex-direction: row;
     margin-left: 0; /* Отступ слева в браузере IE и Opera */
     padding-left: 0;
+    justify-content: space-between;
+}
+
+.footer__ul:last-child{
+    margin-right: 0;
+}
+@media all and (max-width: 750px){
+    .footer__ul{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
 }

@@ -9,3 +9,16 @@
     flex-direction: column;
     padding:0 104px;
 }
+
+
+@media all and (max-width: 768px) {
+    .clients{
+        padding: 0 40px;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .clients{
+        padding: 0 16px;
+    }
+}

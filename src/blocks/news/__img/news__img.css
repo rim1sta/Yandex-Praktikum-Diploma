@@ -1,0 +1,13 @@
+@media all and (max-width: 1024px) {
+    .news__img {
+        width: 224px;
+        height: 150px;
+    }
+  }
+  
+  @media all and (max-width: 767px) {
+    .news__img {
+      width: 288px;
+      height: 196px;
+    }
+  }

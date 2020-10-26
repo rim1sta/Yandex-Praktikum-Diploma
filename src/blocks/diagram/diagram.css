@@ -11,8 +11,12 @@
 @import url(./__title/diagram__title.css);
 @import url(./__week-day/diagram__week-day.css);
 @import url(./__week/diagramm__week.css);
+@import url(./__title-container-data/diagram__title-container-data.css);
+
 
 .diagram{
-    margin: 0 auto;
-    padding: 0 104px;
+    display: flex;
+  flex-direction: column;
+  width: 100%;
+   background-color: #F5F6F7;
 }

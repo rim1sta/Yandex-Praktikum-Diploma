@@ -3,3 +3,9 @@
     top: 306px;
     left: 24px;
 }
+
+@media all and (max-width: 980px) {
+    .slider__arrow-left {
+      display: none;
+    }
+  }
