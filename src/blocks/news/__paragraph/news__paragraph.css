@@ -7,15 +7,16 @@ line-height: 22px;
 color: #1A1B22;
 margin-top: 16px;
 margin-bottom: 0;
-}
-@media all and (max-width: 1024px) {
-    .news__paragraph {
-      display: -webkit-box;
+display: -webkit-box;
       -webkit-line-clamp: 4;
       -webkit-box-orient: vertical;
       overflow: hidden;
-      max-height: 88px;
+      max-height: 110px;
+}
+@media all and (max-width: 1024px) {
+    .news__paragraph {
       margin-top: 10px;
+      max-height: 88px;
     }
   }
   
