@@ -1,0 +1,19 @@
+.footer__link{
+    text-decoration: none;
+    font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 0px;
+text-align: center;
+color: #1A1B22;
+}
+
+
+@media all and (max-width: 1076px){
+    .footer__link{
+        
+    }
+  }
+
+  

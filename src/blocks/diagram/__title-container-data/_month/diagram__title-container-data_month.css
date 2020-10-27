@@ -1,0 +1,15 @@
+.diagram__title-container-data_month{
+    max-width: 70px;
+  margin-right: 35px;
+}
+@media all and (max-width: 768px) {
+  .diagram__title-container-data_month {
+    margin-right: 20px;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .diagram__title-container-data_month {
+    margin-right: 5px;
+  }
+}

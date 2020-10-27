@@ -1,0 +1,12 @@
+.slider__title-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 72px;
+}
+@media all and (max-width: 768px) {
+    .slider__title-container{
+        padding-top: 40px;
+    }
+}

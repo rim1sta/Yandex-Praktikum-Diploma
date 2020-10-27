@@ -1,0 +1,7 @@
+.footer__social-li{
+    list-style-type: none;
+    margin-right: 27px;
+}
+.footer__social-li:last-child{
+    margin-right: 0;
+}

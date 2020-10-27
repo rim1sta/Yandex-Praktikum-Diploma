@@ -1,0 +1,14 @@
+.diagram__blue-line {
+    height: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    padding-left: 6px;
+    color: #FFFFFF;
+    background: #2F71E5;
+  }

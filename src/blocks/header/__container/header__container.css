@@ -1,0 +1,20 @@
+.header__container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;  
+  padding: 0 104px;
+}
+
+@media all and (max-width: 768px) {
+  .header__container {
+    padding: 0 40px;
+    height: 64px;
+  }
+}
+
+@media all and (max-width: 520px) {
+  .header__container {
+    padding: 0 16px;
+    height: 56px;
+  }
+}

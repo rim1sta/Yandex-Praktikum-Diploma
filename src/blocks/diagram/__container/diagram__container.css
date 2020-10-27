@@ -1,0 +1,16 @@
+.diagram__container{
+    margin: 0 ;
+  padding: 0 104px;;
+  margin-bottom: 80px;
+}
+@media all and (max-width: 1026px) {
+  .diagram__container {
+    padding: 0 40px;
+  }
+}
+@media all and (max-width: 425px) {
+  .diagram__container {
+    padding: 0 16px;
+    margin-bottom: 38px;
+  }
+}

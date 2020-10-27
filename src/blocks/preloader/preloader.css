@@ -1,0 +1,15 @@
+@import url(./__circle-preloader/preloader__cirkle-preloader.css);
+@import url(./__paragraph/preloader__paragraph.css);
+
+.preloader{
+    min-height: 282px;
+    width: 100%;
+    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #F5F6F7;
+  overflow: hidden;
+  display: none;
+}

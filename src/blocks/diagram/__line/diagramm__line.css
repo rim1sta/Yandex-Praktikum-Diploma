@@ -1,0 +1,13 @@
+.diagram__line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 16px;
+    width: 100%;
+    margin-top: 16px;
+}
+@media all and (max-width: 425px) {
+    .diagram__line {
+      display: none;
+    }
+  }

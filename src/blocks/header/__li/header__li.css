@@ -1,0 +1,15 @@
+.header__li{
+    list-style-type: none;
+    margin-right: 34px;
+}
+.header__li:last-child{
+    margin-right: 0;
+}
+
+
+  
+  @media all and (max-width: 520px) {
+    .header__li {
+      margin-right: 11px;
+    }
+  }

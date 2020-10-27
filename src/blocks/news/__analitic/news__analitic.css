@@ -1,0 +1,22 @@
+.news__analitic{
+    text-decoration: none;
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+/* identical to box height, or 133% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+/* main/black */
+
+color: #1A1B22;
+}
+@media all and (max-width: 1024px) {
+    .news__analitic {
+      margin-top: 16px;
+    }
+  }

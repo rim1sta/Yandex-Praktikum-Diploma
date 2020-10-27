@@ -1,0 +1,24 @@
+@import url(./__title/clients__title.css);
+@import url(./__paragraph/cliets__paragraph.css);
+@import url(./__description/clients__description.css);
+@import url(./__container/clients__container.css);
+
+
+.clients{
+    display: flex;
+    flex-direction: column;
+    padding:0 104px;
+}
+
+
+@media all and (max-width: 768px) {
+    .clients{
+        padding: 0 40px;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .clients{
+        padding: 0 16px;
+    }
+}

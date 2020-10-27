@@ -1,0 +1,6 @@
+.footer__social-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    order: 3;
+}

@@ -1,0 +1,23 @@
+.news__button{
+    background: #FFFFFF;
+border-radius: 80px;
+width: 288px;
+height: 64px;
+border: none;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+cursor: pointer;
+margin-bottom: 80px;
+}
+
+.news__button:hover{
+    opacity: 0.9;
+}
+@media all and (max-width: 1024px) {
+    .news__button {
+      margin-bottom: 40px;
+    }
+  }

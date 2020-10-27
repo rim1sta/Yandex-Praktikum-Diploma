@@ -1,0 +1,33 @@
+.technologes__title{
+    font-family: Roboto Slab;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 46px;
+color: #1A1B22;
+margin-right: 194px;
+width: 344px; 
+margin-top: 80px;
+}
+
+@media all and (max-width: 1024px) {
+    .technologes__title{
+        margin-top: 40px;
+        font-size: 30px;
+line-height: 34px;
+margin-right: 0;
+padding: 0;
+    }
+}
+@media all and (max-width: 768px) {
+    .technologes__title{
+        width: 240px;
+
+    }
+}
+
+@media all and (max-width: 666px) {
+    .technologes__title{
+       margin-bottom: 0;
+    }
+}

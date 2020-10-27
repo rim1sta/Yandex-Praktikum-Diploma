@@ -1,0 +1,11 @@
+.slider__card-user{
+    display: flex;
+    flex-direction: row;
+    
+    margin-top: 16px;
+}
+@media all and (max-width: 550px) {
+    .slider__card-user{
+        margin-top: 11px;
+    }
+}

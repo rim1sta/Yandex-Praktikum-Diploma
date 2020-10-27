@@ -1,0 +1,18 @@
+.footer__li{
+    list-style-type: none;
+    margin-right: 40px;
+}
+.footer__li:last-child{
+    margin-right: 0;
+}
+@media all and (max-width: 900px){
+    .footer__li{
+        margin-right: 25px;
+    }
+}
+@media all and (max-width: 750px){
+    .footer__li{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+}

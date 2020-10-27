@@ -1,0 +1,13 @@
+.diagram__title-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    border-bottom: 1px solid #1A1B22;
+    margin: 48px auto 0;
+}
+@media all and (max-width: 425px) {
+    .diagram__title-container {
+      margin: 16px auto 8px;
+    }
+  }

@@ -1,0 +1,19 @@
+.slider__title{
+    font-family: Roboto Slab;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 46px;
+/* identical to box height, or 115% */
+
+
+/* main/black */
+margin: 0;
+color: #1A1B22;
+}
+@media all and (max-width: 768px) {
+    .slider__title{
+        font-size: 30px;
+line-height: 34px;
+    }
+}

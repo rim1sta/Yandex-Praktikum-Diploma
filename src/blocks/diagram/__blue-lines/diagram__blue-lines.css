@@ -1,0 +1,12 @@
+.diagram__blue-lines {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 504px;
+  }
+  @media all and (max-width: 425px) {
+    .diagram__blue-lines {
+      min-height: 308px;
+    }
+  }

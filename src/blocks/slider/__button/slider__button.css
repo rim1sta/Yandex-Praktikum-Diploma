@@ -1,0 +1,15 @@
+.slider__button{
+    display: none;
+    border: 1px solid #1A1B22;
+box-sizing: border-box;
+border-radius: 80px;
+width: 288px;
+height: 56px;
+text-align: center;
+padding-bottom: 32px;
+}
+@media all and (max-width: 550px) {
+    .slider__button{
+       display: flex;
+}
+}

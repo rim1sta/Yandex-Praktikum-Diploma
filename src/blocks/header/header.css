@@ -1,0 +1,33 @@
+@import url(./__ul/header__ul.css);
+@import url(./__nav/header__nav.css);
+@import url(./__logo/header__logo.css);
+@import url(./__link/header__link.css);
+@import url(./__li/header__li.css);
+@import url(./__container/header__container.css);
+@import url(./_theme_img/header_theme_img.css);
+@import url(./__logo/header__logo_theme_dark.css);
+@import url(./__link/header__link_active.css);
+@import url(./__link/header__link_theme_dark.css);
+@import url(./__link/header__link_active-white.css);
+@import url(./_theme_white/header_theme_white.css);
+@import url(./__logo/_theme_white.css);
+@import url(./__link/header__link_theme_white.css);
+
+.header{
+    display: flex;
+    width: 100%;
+    min-height: 80px;
+}
+
+@media all and (max-width: 768px) {
+    .header {
+      min-height: 64px;
+    }
+  }
+  
+  @media all and (max-width: 520px) {
+    .header {
+      min-height: 56px;
+    }
+  }
+  

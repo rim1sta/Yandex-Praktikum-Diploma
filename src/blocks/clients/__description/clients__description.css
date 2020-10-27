@@ -1,0 +1,15 @@
+.clients__description{
+    margin-bottom: 94px;
+}
+
+@media all and (max-width: 768px) {
+    .clients__description{
+        margin-bottom: 48px;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .clients__description{
+        margin-bottom: 32px;
+    }
+}

@@ -1,0 +1,30 @@
+@import url(./__title/technoleges__title.css);
+@import url(./__items/technologes__items.css);
+@import url(./__item/technologes__item.css);
+
+
+
+
+
+.technologes{
+    padding: 0 104px;
+    display: flex;
+    flex-direction: row;
+    background-color: #F5F6F7;
+}
+@media all and (max-width: 1283px) {
+    .technologes{
+        flex-direction: column;
+    }
+}
+@media all and (max-width: 768px) {
+    .technologes{
+        padding: 0 40px;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .technologes{
+        padding:0 16px;
+    }
+}

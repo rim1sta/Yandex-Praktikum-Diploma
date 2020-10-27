@@ -1,0 +1,13 @@
+.request__news{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+/* identical to box height, or 133% */
+
+
+color: #1A1B22;
+margin: 0;
+margin-bottom: 4px;
+}

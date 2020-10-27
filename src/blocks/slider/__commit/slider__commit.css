@@ -1,0 +1,26 @@
+.slider__commit{
+    width: 352px;
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+/* or 137% */
+
+
+/* main/black */
+
+color: #1A1B22;
+margin: 0;
+margin-top: 16px;
+}
+@media all and (max-width: 768px) {
+    .slider__commit{
+        width: 296px;
+    }
+}
+@media all and (max-width: 550px) {
+    .slider__commit{
+        width: 246px;
+    }
+}

@@ -1,0 +1,26 @@
+.news__title-result{
+    font-family: Roboto Slab;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 46px;
+/* identical to box height, or 115% */
+
+
+/* main/black */
+margin: 0;
+color: #1A1B22;
+}
+
+@media all and (max-width: 1024px) {
+    .news__title-result {
+        font-size: 30px;
+        line-height: 34px;
+    }
+  }
+  
+  @media all and (max-width: 767px) {
+    .news__title-result {
+      margin-top: 17px;
+    }
+  }

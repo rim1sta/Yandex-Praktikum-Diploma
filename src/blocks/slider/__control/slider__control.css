@@ -1,0 +1,18 @@
+.slider__control{
+    position: absolute;
+    bottom: 80px;
+    left: 700px;
+    
+}
+@media all and (max-width: 980px) {
+    .slider__control {
+      bottom: 40px;
+      left: 364px;
+    }
+  }
+  @media all and (max-width: 500px) {
+    .slider__control {
+      bottom: 112px;
+      left: 140px;
+    }
+  }

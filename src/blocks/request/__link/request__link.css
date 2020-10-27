@@ -1,0 +1,12 @@
+.request__link{
+    text-decoration: none;
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+/* identical to box height, or 133% */
+cursor: pointer;
+
+color: #1A1B22;
+}
