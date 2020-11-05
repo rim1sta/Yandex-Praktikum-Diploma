@@ -13,13 +13,13 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: {
-        index: './src/scripts/index.js' ,
-        about: './src/scripts/about.js',
-        paper: './src/scripts/paper.js',
+        index: './src/js/index.js' ,
+        about: './src/js/about.js',
+        paper: './src/js/paper.js',
     },  
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: './scripts/[name].[chunkhash].js',
+        filename: './js/[name].[chunkhash].js',
     },
     module: {
         rules: [
