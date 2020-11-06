@@ -11,25 +11,25 @@
 @import url(./__analitic/news__analitic.css);
 @import url(./__button/news__button.css);
 @import url(./__container/news__container.css);
-
+@import url(../active/active.css);
 
 .news{
-    display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box;
-  background: #F5F6F7;
-  padding: 0 104px;
+  display: none;
+flex-direction: column;
+align-items: center;
+width: 100%;
+box-sizing: border-box;
+background: #F5F6F7;
+padding: 0 104px;
 }
 @media all and (max-width: 1024px) {
-  .news {
-    padding: 0 40px;
-  }
+.news {
+  padding: 0 40px;
+}
 }
 
 @media all and (max-width: 767px) {
-  .news {
-    padding: 0 16px;
-  }
+.news {
+  padding: 0 16px;
+}
 }
