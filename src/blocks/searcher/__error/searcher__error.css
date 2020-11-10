@@ -1,0 +1,18 @@
+.searcher__error{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    position: absolute;
+  left: 26px;
+  top: 5px;
+    font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #df4b41;
+  text-align: left;
+  font-size: 14px;
+}
+@media all and (max-width: 500px) {
+    .searcher__error {
+      top: 130px;
+    }
+  }

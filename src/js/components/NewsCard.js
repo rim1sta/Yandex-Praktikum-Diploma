@@ -1,3 +1,6 @@
+import {dateForCard} from "../utils/functions.js";
+
+
 export default class NewsCard {
   constructor(item) {
     this.item = item;
@@ -23,10 +26,9 @@ export default class NewsCard {
   create() {
     this.card = this.getTemplate();
     this.card.querySelector(".news__link").setAttribute("href", this.item.url);
-    this.card
-      .querySelector(".news__img")
-      .setAttribute("src", this.item.urlToImage);
-    this.card.querySelector(".news__date").textContent = this.item.publishedAt;
+    const image = this.card.querySelector(".news__img");
+    this._setImagePlug(this.item.urlToImage, image);
+    this.card.querySelector(".news__date").textContent = dateForCard(this.item.publishedAt);
     this.card.querySelector(".news__title-card").textContent = this.item.title;
     this.card.querySelector(
       ".news__paragraph"
@@ -35,5 +37,12 @@ export default class NewsCard {
       ".news__source"
     ).textContent = this.item.source.name;
     return this.card;
+  }
+  _setImagePlug(url, image) {
+    if (url === null) {
+      image.setAttribute("src", "./images/image_05.jpg");
+    } else {
+      image.setAttribute("src", url);
+    }
   }
 }

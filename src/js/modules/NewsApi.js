@@ -1,19 +1,27 @@
 export default class NewsApi {
-  constructor(baseUrl, searchInput, date, apiKey) {
+  constructor(baseUrl, pageSize, searchInput, weekAgo, currentDate, apiKey) {
     this.baseUrl = baseUrl;
+    this.pageSize = pageSize;
     this.searchInput = searchInput;
-    this.date = date;
-
+    this.currentDate = currentDate;
+    this.weekAgo = weekAgo;
     this.apiKey = apiKey;
+    
   }
   getNews = () => {
     return fetch(
-      `${this.baseUrl}q=${this.searchInput.value}&from=${this.date}&apiKey=${this.apiKey}`,
+        `${this.baseUrl}` +
+        `pageSize=${this.pageSize}&` +
+        `q=${this.searchInput.value}&` +
+        `from=${this.weekAgo}&` +
+        `to=${this.currentDate}&` +
+        `apiKey=${this.apiKey}`,
       {
         method: "GET",
       }
     ).then((res) => {
       return this._getResponseData(res);
+      
     });
   };
   _getResponseData(res) {
@@ -22,4 +30,5 @@ export default class NewsApi {
     }
     return res.json();
   }
+  
 }

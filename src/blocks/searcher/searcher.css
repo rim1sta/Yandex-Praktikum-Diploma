@@ -4,6 +4,9 @@
 @import url(./__input/searcher__input.css);
 @import url(./__subtitle/searcher__subtitle.css);
 @import url(./__title/searcher__title.css);
+@import url(./__error/searcher__error.css);
+
+
 
 .searcher{
     background-image: url(../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.png);

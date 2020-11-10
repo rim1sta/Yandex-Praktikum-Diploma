@@ -29,14 +29,19 @@
                 <h1 class="searcher__title">Что в мире творится?</h1>
                 <p class="searcher__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в
                     новостях за прошедшую неделю.</p>
-                <form class="searcher__form" name="searcherForm" validate>
+                <form class="searcher__form" name="searcherForm" novalidate>
                     <input class="searcher__input" type="search" placeholder="Введите тему новости" minlength="2"
                         maxlength="30" required>
+                        <span class="searcher__error"></span>
                     <button type="submit" class="searcher__button">Искать</button>
                 </form>
             </div>
         </section>
         <main class="content">
+            <section class="preloader">
+                <i class="preloader__circle-preloader"></i>
+                <p class="preloader__paragraph">Идет поиск новостей...</p>
+            </section>
             <section class="news">
                 <div class="news__title">
                     <h2 class="news__title-result">Результаты поиска</h2>
@@ -67,10 +72,7 @@
                     Показать еще
                 </button>
             </section>
-            <section class="preloader">
-                <i class="preloader__circle-preloader"></i>
-                <p class="preloader__paragraph">Идет поиск новостей...</p>
-            </section>
+            
             <section class="search-error">
                 <img src="<%=require('./images/not-found_v1.svg')%>" alt="ошибка поиска" class="search-error__img">
                 <h2 class="search-error__title">Ничего не найдено</h2>

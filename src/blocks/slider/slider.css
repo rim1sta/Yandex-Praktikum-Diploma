@@ -19,22 +19,23 @@
 
 
 .slider{
-    margin: 0 auto;
-    padding: 0 104px;
-    background-color: #F5F6F7;
-    position: relative;
-    overflow: hidden;
+    margin: 0 auto !important;
+    padding: 0 104px !important;
+    background-color: #F5F6F7 !important;
+    position: relative !important;
+    overflow: hidden !important;
+    
 }
 
 @media all and (max-width: 768px) {
     .slider{
-        padding: 0 40px;
+        padding: 0 40px !important;
     }
 }
 
 @media all and (max-width: 550px) {
     .slider{
         padding:0 16px;
-        padding-bottom: 32px;
+        padding-bottom: 32px !important;
     }
 }
