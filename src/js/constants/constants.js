@@ -8,7 +8,7 @@ export const SECOND_ARG = 3;
 export const NODE_ENV = process.env.NODE_ENV === "production";
 export const API_KEY = "5fc728e5d1e342cdb15adc005cc6e261";
 export const API_URL =
-  NODE_ENV === 'production' ? 'https://newsapi.org/v2/everything?': 'https://nomoreparties.co/news/v2/everything?';
+  NODE_ENV === 'development' ? 'https://newsapi.org/v2/everything?': 'https://nomoreparties.co/news/v2/everything?';
 
 export const DATE = new Date();
 export const CURRENT_DATE = `${DATE.getFullYear()}-${

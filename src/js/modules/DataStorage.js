@@ -8,10 +8,10 @@ export default class DataStorage {
   updateData() {
     localStorage.removeItem("data");
   }
-  setRequest(request){
-    localStorage.setItem("request", `${request}`);
+  setValue(value){
+    localStorage.setItem("value", `${value}`);
   };
-  getRequest(){
-    return localStorage.getItem("request");
+  getValue(){
+    return localStorage.getItem("value");
   };
 }

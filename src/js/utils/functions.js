@@ -70,8 +70,8 @@ function result(totalResult, element, error){
     let date = new Date();
     return date.getDate() - day;
   };
-   function setMounth(mounth) {
-    mounth.textContent = `Дата (${dateMonth(new Date().getMonth() + 1)})`;
+   function setMonth(month) {
+    month.textContent = `Дата (${dateMonth(new Date().getMonth() + 1)})`;
   };
   
    function setWeekDays(container) {
@@ -79,4 +79,13 @@ function result(totalResult, element, error){
       item.textContent = `${setDays(index)}`;
      });
   };
-export {renderLoading, result, renderThreeCards, deleteButton, dateForCard, setWeekDays, setMounth};
+
+
+  function renderBlock(state, section){
+      if(state){
+      section.classList.add('active')
+      } else {
+          section.classList.remove('active')
+      }
+  }
+export {renderLoading, result, renderThreeCards, deleteButton, dateForCard, setWeekDays, setMonth, renderBlock};

@@ -9,6 +9,7 @@ import {
   result,
   renderThreeCards,
   deleteButton,
+  renderBlock,
 } from "./utils/functions.js";
 import {
   FIRST_ARG,
@@ -68,6 +69,7 @@ function searchNews() {
 
     .then((res) => {
       dataStorage.saveData(res.articles);
+      dataStorage.getValue(searcherInput.value)
       console.log(res.articles.length === 0);
 
       result(res.articles.length === 0, newsSection, errorSection);
@@ -88,6 +90,8 @@ searcherInput.addEventListener("input", () => {
 });
 
 searchForm.addEventListener("submit", (event) => {
+    event.preventDefault()
+    dataStorage.setValue(searcherInput.value)
   searchInput.checkInputValidity();
   searchInput.setSubmitButtonState(true);
   searchNews();
@@ -97,6 +101,7 @@ searchForm.addEventListener("submit", (event) => {
 });
 
 newsButton.addEventListener("click", (event) => {
+    dataStorage.setValue(searcherInput.value)
   event.preventDefault();
   newsCardList.render(dataStorage.getData(), firstCount(), secondCount());
   deleteButton(dataStorage.getData());
@@ -104,3 +109,9 @@ newsButton.addEventListener("click", (event) => {
 
 
 
+
+    if (localStorage.getItem('articles') === null || dataStorage.getData().length !== 0){
+        renderBlock(false, newsSection)
+    } else {
+newsCardList.render(dataStorage.getData(), FIRST_ARG, SECOND_ARG);
+    }

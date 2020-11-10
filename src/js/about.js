@@ -17,6 +17,7 @@ const mySwiper = new Swiper(".swiper-container", {
   observer: true,
   observeParents: true,
   observeSlideChildren: true,
+  
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
@@ -35,9 +36,9 @@ const mySwiper = new Swiper(".swiper-container", {
 const sliderContainer = document.querySelector(".slider__container");
 const NODE_ENV = process.env.NODE_ENV === "production";
 const API_URL =
-  NODE_ENV === "production"
-    ? "https://api.github.com"
-    : "http://api.github.com";
+  NODE_ENV === "development"
+    ? "http://api.github.com"
+    : "https://api.github.com";
 const options = `${API_URL}/repos/rim1sta/news-analyzer/commits`;
 
 function createCommitCard(dataForElement) {

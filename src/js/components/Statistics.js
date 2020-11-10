@@ -3,7 +3,7 @@ export default class Statistics {
         this.storageData = storageData;
     }
     setTitle(title){
-        title.textContent = `Вы спросили: «${this.storageData.getRequest()}»`;
+        title.textContent = `Вы спросили: «${this.storageData.getValue()}»`;
     }
     setTotalResults(results) {
         results.textContent = `${this.storageData.getData().length}`;
@@ -13,7 +13,7 @@ export default class Statistics {
         this.storageData.getData().forEach((item) => {
           let str = item.title
             .toUpperCase()
-            .indexOf(`${this.storageData.getRequest()}`.toUpperCase());
+            .indexOf(`${this.storageData.getValue()}`.toUpperCase());
           if (str !== -1) {
             count++;
           }
