@@ -67,7 +67,7 @@ function result(totalResult, element, error){
     return `${new Date(date).getDate()} ${dateMonth(new Date(date).getMonth() + 1)}, ${new Date(date).getFullYear()}`;
   };
    function setDays (day) {
-    let date = new Date();
+    const date = new Date();
     return date.getDate() - day;
   };
    function setMonth(month) {

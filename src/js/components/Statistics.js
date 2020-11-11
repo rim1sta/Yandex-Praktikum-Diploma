@@ -20,9 +20,9 @@ export default class Statistics {
         });
         titleRequest.textContent = `${count}`;
       }
-      setStatisticsDay(container) {
-        container.forEach((item, index) => {
-          let date = new Date();
+      setStatisticsDay(nodesArray) {
+        nodesArray.forEach((item, index) => {
+          const date = new Date();
           date.setDate(date.getDate() - index);
           let totalRequest = this._getRequestDays(date.toISOString().substr(0, 10));
           item.textContent = `${totalRequest}`;
@@ -33,7 +33,7 @@ export default class Statistics {
       _getRequestDays(currentDate) {
         let count = 0;
         this.storageData.getData().forEach((item) => {
-          let dateNews = item.publishedAt.substr(0, 10);
+          const dateNews = item.publishedAt.substr(0, 10);
           if (dateNews === currentDate) {
             count++;
           }

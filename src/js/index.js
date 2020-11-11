@@ -21,8 +21,8 @@ import {
   PAGE_SIZE,
 } from "./constants/constants";
 
-let firstCount = renderThreeCards(3, 3);
-let secondCount = renderThreeCards(6, 3);
+const firstCount = renderThreeCards(3, 3);
+const secondCount = renderThreeCards(6, 3);
 
 const newsButton = document.querySelector(".news__button");
 const errorMeassages = document.querySelector(".searcher__error");
@@ -68,16 +68,19 @@ function searchNews() {
     .getNews()
 
     .then((res) => {
+        searchInput.checkInputValidity();
+  searchInput.setSubmitButtonState(false);
       dataStorage.saveData(res.articles);
       dataStorage.getValue(searcherInput.value)
-      console.log(res.articles.length === 0);
+      
 
       result(res.articles.length === 0, newsSection, errorSection);
       newsCardList.render(dataStorage.getData(res), FIRST_ARG, SECOND_ARG);
+      searchInput.setSubmitButtonState(true);
       deleteButton(dataStorage.getData(res));
     })
     .catch((err) => {
-      console.log(`ошибка:${err}. Запрос не выполнен`);
+      alert(`ошибка:${err}. Запрос не выполнен`);
     })
     .finally(() => {
       renderLoading(false, preloader);
@@ -95,7 +98,6 @@ searchForm.addEventListener("submit", (event) => {
   searchInput.checkInputValidity();
   searchInput.setSubmitButtonState(true);
   searchNews();
-  searchForm.reset();
   searchInput.setSubmitButtonState(false);
   deleteButton(dataStorage.getData());
 });
