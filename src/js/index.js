@@ -61,8 +61,8 @@ function searchNews() {
   event.preventDefault();
   newsCardList.updateList();
   renderLoading(true, preloader);
-  firstCount = renderThreeCards(3, 3);
-  secondCount = renderThreeCards(6, 3);
+  const firstCount = renderThreeCards(3, 3);
+  const secondCount = renderThreeCards(6, 3);
   deleteButton(dataStorage.getData());
   newsApi
     .getNews()
