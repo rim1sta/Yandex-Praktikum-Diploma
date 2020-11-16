@@ -2,11 +2,6 @@
     position: relative;
     width: 100%;
 }
-@media all and (max-width: 768px) {
-    .searcher__form {
-      
-    }
-  }
 @media all and (max-width: 660px) {
     .searcher__form {
       display: flex;

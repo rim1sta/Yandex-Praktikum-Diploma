@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NewsAnalyzer</title>
+  
   <link rel="icon" href="<%=require('./images/A.png')%>" type="image/svg+xml" />
 </head>
 
@@ -36,10 +37,10 @@
         </nav>
         <h2 class="request__title">Вы спросили: «Путешествия»</h2>
         <p class="request__news">
-          Новостей за неделю: <span class="request__span">34 324</span>
+          Новостей за неделю: <span class="request__span request__span-week">34 324</span>
         </p>
         <p class="request__news">
-          Упоминаний в загаловках: <span class="request__span">235</span>
+          Упоминаний в загаловках: <span class="request__span request__span-titles">235</span>
         </p>
       </section>
       <section class="diagram">
@@ -53,13 +54,13 @@
             </div>
             <div class="diagram__statistics">
               <div class="diagram__week">
-                <p class="diagram__week-day">19, ПН</p>
-                <p class="diagram__week-day">20, ВТ</p>
-                <p class="diagram__week-day">21, СР</p>
-                <p class="diagram__week-day">22, ЧТ</p>
-                <p class="diagram__week-day">23, ПТ</p>
-                <p class="diagram__week-day">24, СБ</p>
-                <p class="diagram__week-day">25, ВС</p>
+                <p class="diagram__week-day"><span class="diagram__week-span">19</span>, ПН</p>
+                <p class="diagram__week-day"><span class="diagram__week-span">20</span>, ВТ</p>
+                <p class="diagram__week-day"><span class="diagram__week-span">21</span>, СР</p>
+                <p class="diagram__week-day"><span class="diagram__week-span">22</span>, ЧТ</p>
+                <p class="diagram__week-day"><span class="diagram__week-span">23</span>, ПТ</p>
+                <p class="diagram__week-day"><span class="diagram__week-span">24</span>, СБ</p>
+                <p class="diagram__week-day"><span class="diagram__week-span">25</span>, ВС</p>
               </div>
               <div class="diagram__lines">
                 <div class="diagram__line">

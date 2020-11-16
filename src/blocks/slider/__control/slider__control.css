@@ -2,7 +2,6 @@
     position: absolute;
     bottom: 80px;
     left: 700px;
-    
 }
 @media all and (max-width: 980px) {
     .slider__control {

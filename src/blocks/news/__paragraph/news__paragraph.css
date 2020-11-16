@@ -8,10 +8,10 @@ color: #1A1B22;
 margin-top: 16px;
 margin-bottom: 0;
 display: -webkit-box;
-      -webkit-line-clamp: 4;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      max-height: 110px;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+  overflow: hidden;
+  max-height: 110px;
 }
 @media all and (max-width: 1024px) {
     .news__paragraph {
